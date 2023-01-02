@@ -6,7 +6,7 @@ Programs have memory for it, they have a stack, heap, etc., etc.
 
 Let’s focus on the Stack:
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a3d629da-85ba-489e-8167-6e8671133494/Untitled.png)
+![memory1](https://github.com/shodanwashere/badserver/blob/main/img1.png?raw=true)
 
 Buffer space grows downward. Normally we can write to the buffer space and it won’t be a problem because, if the program is written with proper memory management, the buffer can contain everything that is written to it:
 
