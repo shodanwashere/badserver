@@ -8,9 +8,11 @@ Programs have memory for it, they have a stack, heap, etc., etc.
 
 Let’s focus on the Stack:
 
+![memory2](https://github.com/shodanwashere/badserver/blob/main/img2.png?raw=true)
+
 Buffer space grows downward. Normally we can write to the buffer space and it won’t be a problem because, if the program is written with proper memory management, the buffer can contain everything that is written to it:
 
-![memory2]([https://s3-us-west-2.amazonaws.com/secure.notion-static.com/389ad78d-85b0-4009-bcfa-4d0bb0d3a8ea/Untitled.png](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a3d629da-85ba-489e-8167-6e8671133494/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230102%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230102T151848Z&X-Amz-Expires=86400&X-Amz-Signature=3f4074c9b113590e22201f8321baca370f0b98c6e4b8f29fdad787be06407447&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject))
+![memory3](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/389ad78d-85b0-4009-bcfa-4d0bb0d3a8ea/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230102%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230102T152033Z&X-Amz-Expires=86400&X-Amz-Signature=dca76638889fc77864706dbb685a51c804be69dd59a75d9e437e0e9cc7ebacdc&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
 
 Programs with improper memory management allow you to write to the buffer space as much as you want without keeping its contents contained, which means you can overwrite memory spaces below the buffer, like the EBP and the ******EIP******, which buffer overflow attacks target.
 
